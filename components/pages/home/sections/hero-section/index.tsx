@@ -1,6 +1,7 @@
 import { Container } from "@/components/global/container"
 import { AvatarCircle } from "./avatar-circle"
 import { WaitListButton } from "@/components/buttons/wait-list-button"
+import { SocialPlatforms } from "./social-platforms"
 
 export const HeroSection = () => {
   return (
@@ -15,6 +16,7 @@ export const HeroSection = () => {
           <br /> your passions effortlessly.
         </p>
         <WaitListButton className="mt-5" />
+        <SocialPlatforms />
       </div>
     </Container>
   )

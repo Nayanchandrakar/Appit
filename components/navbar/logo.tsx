@@ -10,7 +10,7 @@ export const Logo = () => {
         width={1000}
         height={1000}
         sizes="100vw"
-        className="size-5"
+        className="w-32"
       />
     </Link>
   )

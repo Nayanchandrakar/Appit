@@ -1,7 +1,8 @@
 import { Container } from "@/components/global/container"
 import { AvatarCircle } from "./avatar-circle"
 import { WaitListButton } from "@/components/buttons/wait-list-button"
-import { SocialPlatforms } from "./social-platforms"
+import { SocialPlatforms } from "@/components/pages/home/sections/hero-section/social-platforms"
+import { HeroBanner } from "@/components/pages/home/sections/hero-banner"
 
 export const HeroSection = () => {
   return (
@@ -17,6 +18,7 @@ export const HeroSection = () => {
         </p>
         <WaitListButton className="mt-5" />
         <SocialPlatforms />
+        <HeroBanner />
       </div>
     </Container>
   )

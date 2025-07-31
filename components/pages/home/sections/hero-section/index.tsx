@@ -15,7 +15,7 @@ export const HeroSection = () => {
           as="h1"
           preset="fade-in-blur"
           speedSegment={0.7}
-          className="text-center text-6xl font-extrabold leading-tight mx-auto max-w-[50rem]"
+          className="text-center text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mx-auto max-w-[50rem]"
         >
           Connect, Share, and Grow with Appit Social
         </TextEffect>
@@ -25,7 +25,7 @@ export const HeroSection = () => {
           delay={0.5}
           preset="fade-in-blur"
           speedSegment={0.7}
-          className="text-center text-xl text-muted-foreground mx-auto max-w-lg"
+          className="text-center text-lg sm:text-xl text-muted-foreground mx-auto max-w-lg"
         >
           Join Appit to build authentic connections and share your passions
           effortlessly.

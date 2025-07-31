@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export const SocialPlatforms = () => {
   return (
-    <div className="flex items-center mt-6 gap-3">
+    <div className="flex items-center mt-5 gap-3">
       <p className="text-zinc-500 text-base flex items-center gap-2">
         <Info className="size-5" />
         App Available For

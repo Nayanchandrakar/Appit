@@ -11,9 +11,9 @@ export const HeroBanner = () => {
   }
 
   return (
-    <Container className="relative h-[500px] flex  items-center justify-between overflow-visible mt-10 px-20 sm:px-6 md:px-10 lg:px-30">
+    <Container className="relative h-[450px] lg:h-[500px] flex  items-center justify-center lg:justify-between overflow-visible mt-12 px-20 sm:px-6 md:px-10 lg:px-30">
       <motion.div
-        className="mb-[25rem] relative"
+        className="mb-[25rem] relative hidden lg:inline-block"
         variants={variants}
         initial="hidden"
         whileInView="visible"
@@ -24,7 +24,7 @@ export const HeroBanner = () => {
           src="/hero/banner1.png"
           width={1000}
           height={1000}
-          className="w-[14rem]"
+          className=" w-[12.5rem] lg:w-[14rem]"
           priority
         />
         <div className="bg-gradient-to-b from-transparent via-transparent to-black  size-full absolute inset-0" />
@@ -42,14 +42,14 @@ export const HeroBanner = () => {
           src="/hero/banner2.png"
           width={1000}
           height={1000}
-          className="w-[16.5rem]"
+          className="w-[18rem] lg:w-[16.5rem]"
           priority
         />
         <div className="bg-gradient-to-b from-transparent via-transparent to-black  size-full absolute inset-0" />
       </motion.div>
 
       <motion.div
-        className="relative mb-[25rem]"
+        className="relative mb-[25rem] hidden lg:inline-block"
         variants={variants}
         initial="hidden"
         whileInView="visible"
@@ -60,7 +60,7 @@ export const HeroBanner = () => {
           src="/hero/banner3.png"
           width={1000}
           height={1000}
-          className="w-[14rem]"
+          className="w-[12.5rem] lg:w-[14rem]"
           priority
         />
         <div className="bg-gradient-to-b from-transparent via-transparent to-black  size-full absolute inset-0" />

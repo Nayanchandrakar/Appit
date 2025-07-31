@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { buttonVariants } from "@/components/ui/button"
+import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 
 interface WaitListButtonProps {
   className?: string
@@ -7,14 +8,8 @@ interface WaitListButtonProps {
 
 export const WaitListButton = ({ className }: WaitListButtonProps) => {
   return (
-    <Link
-      href="/"
-      className={buttonVariants({
-        variant: "default",
-        className,
-      })}
-    >
-      Join Waitlist
-    </Link>
+    <Button asChild className={cn(className)}>
+      <Link href="/">Join Waitlist</Link>
+    </Button>
   )
 }

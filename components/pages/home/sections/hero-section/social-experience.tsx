@@ -1,9 +1,9 @@
 "use client"
 
-import { Container } from "@/components/global/container"
-import { AnimatedNumber } from "@/components/motion-primitives/animated-number"
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import { Container } from "@/components/global/container"
+import { AnimatedNumber } from "@/components/motion-primitives/animated-number"
 
 export const SocialExperience = () => {
   const [value, setValue] = useState({
@@ -22,24 +22,24 @@ export const SocialExperience = () => {
 
   return (
     <Container className="mt-56 flex items-center justify-center flex-col gap-8 mx-auto max-w-6xl">
-      <div className="flex items-center justify-center size-24 rounded-full bg-gradient-to-b from-zinc-800 to-black">
+      <div className="flex items-center justify-center size-16 md:size-24 rounded-full bg-gradient-to-b from-zinc-800 to-black">
         <Image
           src="/app-logo.svg"
           alt="app-logo"
-          className="size-14"
+          className="size-10 md:size-14"
           width={1000}
           height={1000}
           sizes="100vw"
         />
       </div>
 
-      <p className="text-3xl md:text-5xl text-center font-bold ">
+      <p className="text-2xl sm:text-3xl md:text-5xl text-center font-bold ">
         Empowering authentic connections for a vibrant social experience.
       </p>
 
-      <div className="grid grid-cols-1 min-[818px]:grid-cols-3 gap-3 mt-20">
+      <div className="grid grid-cols-1 min-[818px]:grid-cols-3 gap-3 mt-4 md:mt-6 min-[818px]:mt-20">
         <div className="flex items-center justify-center flex-col gap-4 border-b min-[818px]:border-r p-4">
-          <span className="text-5xl font-bold">
+          <span className="text-4xl md:text-5xl font-bold">
             <AnimatedNumber
               springOptions={{
                 bounce: 0,
@@ -56,7 +56,7 @@ export const SocialExperience = () => {
         </div>
 
         <div className="flex items-center justify-center flex-col gap-4 border-b min-[818px]:border-r p-4">
-          <span className="text-5xl font-bold">
+          <span className="text-4xl md:text-5xl font-bold">
             <AnimatedNumber
               springOptions={{
                 bounce: 0,
@@ -73,7 +73,7 @@ export const SocialExperience = () => {
         </div>
 
         <div className="flex items-center justify-center flex-col gap-4 p-4">
-          <span className="text-5xl font-bold">
+          <span className="text-4xl md:text-5xl font-bold">
             <AnimatedNumber
               springOptions={{
                 bounce: 0,

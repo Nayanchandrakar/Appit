@@ -1,27 +1,39 @@
 "use client"
 
 import Image from "next/image"
-import { useEffect, useState } from "react"
+import { useRef, useState } from "react"
 import { Container } from "@/components/global/container"
 import { AnimatedNumber } from "@/components/motion-primitives/animated-number"
+import { useInView } from "motion/react"
 
 export const SocialExperience = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
   const [value, setValue] = useState({
     firstValue: 450,
     secondValue: 150,
     thirdValue: 0,
   })
 
-  useEffect(() => {
+  if (
+    isInView &&
+    value.firstValue === 450 &&
+    value.secondValue === 150 &&
+    value.thirdValue === 0
+  ) {
     setValue({
       firstValue: 500,
       secondValue: 200,
       thirdValue: 50,
     })
-  }, [])
+  }
 
   return (
-    <Container className="mt-56 flex items-center justify-center flex-col gap-8 mx-auto max-w-6xl">
+    <Container
+      ref={ref}
+      className="mt-32 md:mt-56 flex items-center justify-center flex-col gap-8 mx-auto max-w-6xl"
+    >
       <div className="flex items-center justify-center size-16 md:size-24 rounded-full bg-gradient-to-b from-zinc-800 to-black">
         <Image
           src="/app-logo.svg"
@@ -43,7 +55,7 @@ export const SocialExperience = () => {
             <AnimatedNumber
               springOptions={{
                 bounce: 0,
-                duration: 2000,
+                duration: 4000,
               }}
               value={value.firstValue}
             />
@@ -60,7 +72,7 @@ export const SocialExperience = () => {
             <AnimatedNumber
               springOptions={{
                 bounce: 0,
-                duration: 2000,
+                duration: 4000,
               }}
               value={value.secondValue}
             />
@@ -77,7 +89,7 @@ export const SocialExperience = () => {
             <AnimatedNumber
               springOptions={{
                 bounce: 0,
-                duration: 2000,
+                duration: 4000,
               }}
               value={value.thirdValue}
             />

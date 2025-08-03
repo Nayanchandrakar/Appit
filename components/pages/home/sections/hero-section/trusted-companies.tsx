@@ -16,7 +16,7 @@ const companies = [
 export const TrustedCompanies = () => {
   return (
     <Container asChild>
-      <section className="flex items-center justify-center flex-col gap-9 mt-28 sm:mt-32">
+      <section className="flex items-center justify-center flex-col gap-9 mt-28 sm:mt-32 overflow-hidden">
         <h3 className="text-lg font-semibold text-center">
           Trusted by 1000+ businesses across the world
         </h3>

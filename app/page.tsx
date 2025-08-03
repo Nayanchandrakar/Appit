@@ -1,4 +1,5 @@
 import { AdvanceCapabilites } from "@/components/pages/home/sections/capabilites/advance-capabilities"
+import { AppitFeatures } from "@/components/pages/home/sections/features/appit-features"
 import { HeroBanner } from "@/components/pages/home/sections/hero-banner"
 import { HeroSection } from "@/components/pages/home/sections/hero-section"
 import { AppBenefits } from "@/components/pages/home/sections/hero-section/app-benefits"
@@ -16,6 +17,7 @@ export default function HomePage() {
       <AppBenefits />
       <SocialCapabilities />
       <AdvanceCapabilites />
+      <AppitFeatures />
     </>
   )
 }

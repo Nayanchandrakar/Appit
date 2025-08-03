@@ -1,3 +1,4 @@
+import { AdvanceCapabilites } from "@/components/pages/home/sections/capabilites/advance-capabilities"
 import { HeroBanner } from "@/components/pages/home/sections/hero-banner"
 import { HeroSection } from "@/components/pages/home/sections/hero-section"
 import { AppBenefits } from "@/components/pages/home/sections/hero-section/app-benefits"
@@ -14,6 +15,7 @@ export default function HomePage() {
       <SocialExperience />
       <AppBenefits />
       <SocialCapabilities />
+      <AdvanceCapabilites />
     </>
   )
 }
